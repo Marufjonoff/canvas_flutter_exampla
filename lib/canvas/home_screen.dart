@@ -2,7 +2,7 @@ import 'package:canvas_flutter_exampla/canvas/animated_battery_screen.dart';
 import 'package:canvas_flutter_exampla/canvas/arc_and_curves_screen.dart';
 import 'package:canvas_flutter_exampla/canvas/ovals_and_circles_screen.dart';
 import 'package:canvas_flutter_exampla/canvas/polygon_screen.dart';
-import 'package:canvas_flutter_exampla/widgets/custom_elevated_button.dart';
+import 'package:canvas_flutter_exampla/widgets/custom_material_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -25,22 +25,22 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CustomElevatedButton(
+          CustomMaterialButton(
               title: 'Polygon',
               onPressed: () => navigate(const PolygonScreen(), context),
           ),
 
-          CustomElevatedButton(
+          CustomMaterialButton(
               title: 'Ovals and Circles',
               onPressed: () => navigate(const OvalsAndCirclesScreen(), context),
           ),
 
-          CustomElevatedButton(
+          CustomMaterialButton(
               title: 'Arc and Curves',
               onPressed: () => navigate(const ArcAndCurvesScreen(), context),
           ),
 
-          CustomElevatedButton(
+          CustomMaterialButton(
               title: 'Animated Battery',
               onPressed: () => navigate(const AnimatedBatteryScreen(), context),
           ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomElevatedButton extends StatelessWidget {
+class CustomMaterialButton extends StatelessWidget {
   final Function()? onPressed;
   final String title;
 
-  const CustomElevatedButton({super.key, required this.title, required this.onPressed});
+  const CustomMaterialButton({super.key, required this.title, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +14,7 @@ class CustomElevatedButton extends StatelessWidget {
         onPressed: onPressed,
         minWidth: double.infinity,
         height: 50,
+        elevation: 0,
         color: Colors.deepPurple.shade500,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0)
