@@ -1,3 +1,4 @@
+import 'package:canvas_flutter_exampla/widgets/custom_paint.dart';
 import 'package:flutter/material.dart';
 
 class PolygonScreen extends StatefulWidget {
@@ -13,6 +14,10 @@ class _PolygonScreenState extends State<PolygonScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Polygon', style: TextStyle(color: Colors.deepPurple)),
+      ),
+      body: CustomPaint(
+        painter: CustomPaintWidget(),
+        child: Container(),
       ),
     );
   }
