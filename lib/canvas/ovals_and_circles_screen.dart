@@ -1,3 +1,4 @@
+import 'package:canvas_flutter_exampla/widgets/custom_paint_circles.dart';
 import 'package:flutter/material.dart';
 
 class OvalsAndCirclesScreen extends StatefulWidget {
@@ -13,6 +14,10 @@ class _OvalsAndCirclesScreenState extends State<OvalsAndCirclesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Ovals and Circles", style: TextStyle(color: Colors.deepPurple)),
+      ),
+      body: CustomPaint(
+        painter: CustomPaintCircles(),
+        child: Container(),
       ),
     );
   }
